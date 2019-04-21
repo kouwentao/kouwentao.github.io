@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Spring学习整理（一）：Spring基础 | Nano_kou Home | I Will Be Better When We Meet Next Time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Spring">
+    <meta name="description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+<meta name="keywords" content="Spring">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring学习整理（一）：Spring基础">
+<meta property="og:url" content="https://kouwentao.github.io/2019/04/21/Spring/index.html">
+<meta property="og:site_name" content="Nano_kou Home">
+<meta property="og:description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-21T09:10:02.108Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Spring学习整理（一）：Spring基础">
+<meta name="twitter:description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/kou.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Nano_kou</h5>
+          <a href="mailto:kouwentao_blue@163.com" title="kouwentao_blue@163.com" class="mail">kouwentao_blue@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/kouwentao" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/5054970733/profile" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-link"></i>
+                About
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+    <div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="250" height="86" src="//music.163.com/outchain/player?type=2&id=1217530&auto=1&height=66"></iframe>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Spring学习整理（一）：Spring基础</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Spring学习整理（一）：Spring基础</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-04-21T08:27:02.000Z" itemprop="datePublished" class="page-time">
+  2019-04-21
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、Spring"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、Spring</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、核心模块"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1、核心模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、AOP模块"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2、AOP模块.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Web模块"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3、Web模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4、数据库模块"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4、数据库模块</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Spring" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Spring学习整理（一）：Spring基础</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-04-21 16:27:02" datetime="2019-04-21T08:27:02.000Z" itemprop="datePublished">2019-04-21</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="一、Spring"><a href="#一、Spring" class="headerlink" title="一、Spring"></a>一、Spring</h1><p>Spring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。</p>
+<p>Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。</p>
+<p>Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。</p>
+<p>目的：解决企业应用开发的复杂性。</p>
+<p>功能：使用基本的JavaBean代替EJB，并提供了更多企业应用功能。</p>
+<p>Spring是一个容器框架，用来装JavaBean，中间层框架可以起到一个连接作用，比如把Struts2和Hibernate粘合在一起运用。简单来说，Spring是一个轻量级的控制反转（IoC）和面向切面（AOP）的容器矿建。</p>
+<p>在实际开发中，通常服务器采用三层体系架构，Spring对每一层都提供了技术支持。</p>
+<p>表示层（Web）：在表示层提供了对Struts2等框架的整合。</p>
+<p>业务逻辑层（Service）：在业务逻辑层可以管理事务，记录日志等。</p>
+<p>持久层（Dao）：在持久层可以整合Hibernate和JdbcTemplate等技术。</p>
+<p>#二、Spring框架的优点<br>1.使用Spring的IoC容器，将对象之间的依赖关系交个Spring，降低组件之间的耦合性</p>
+<p>2.可以提供众多服务，事务管理，WS等</p>
+<p>3.AOP的很好支持，方便面向切面编程</p>
+<p>4.对主流框架提供很好的集成支持，如Hibernate、Struts2、JPA等</p>
+<p>5.Spring DI机制降低了业务对象替换的复杂性</p>
+<p>6.低侵入，代码污染低</p>
+<p>7.Spring的高度可开放性，并不强制依赖于Spring，开发之可以自由选择Spring的部分或全部</p>
+<p>#三、Spring的体系结构<br>Spring框架采用分层架构，其一系列功能要素被分为20个模块。<br>Spring的核心模块包含Core、Beans、Context和Expression Language四个小模块。其中，Core和Beans是整个Spring框架基础部分，也是Spring 的核心依赖注入IoC和DI的最基本实现，Spring的其他模块大多依赖这两个功能。</p>
+<h2 id="1、核心模块"><a href="#1、核心模块" class="headerlink" title="1、核心模块"></a>1、核心模块</h2><p><code>spring-core</code>：其他模块的基础核心，包含Spring框架的核心工具类，Spring其他模块都要使用该包里面的类。</p>
+<p><code>spring-beans</code>：Spring定义bean的支持，负责访问配置文件、创建和管理bean，支持依赖注入和控制反转的相关操作。Bean工厂类就在这个jar包中。</p>
+<p><code>spring-context</code>：Spring运行时容器，在Core和Beans的基础上，提供对Spring的上下文支持，ApplicationContext是该包的关键，通过它可以快速的取出依赖注入的bean。</p>
+<p><code>spring-expression</code>：Spring表达式语言，帮助Spring在运行时查询和操作对象。支持设置/获取对象的属性值，方法的调用。</p>
+<h2 id="2、AOP模块"><a href="#2、AOP模块" class="headerlink" title="2、AOP模块."></a>2、AOP模块.</h2><p><code>spring-aop</code>：对于代理AOP的支持。</p>
+<p><code>spring-Aspects</code>：对于AspectJ的AOP支持。</p>
+<h2 id="3、Web模块"><a href="#3、Web模块" class="headerlink" title="3、Web模块"></a>3、Web模块</h2><p><code>spring-web</code>：提供基础的web功能，在web项目中提供Spring容器。</p>
+<p><code>spring-webmvc</code>：提供基于Servlet的SpringMVC。</p>
+<p><code>spring-WebSocket</code>：提供WebSocket功能。</p>
+<p><code>spring-webmvc-portlet</code>：提供portlet的支持。</p>
+<h2 id="4、数据库模块"><a href="#4、数据库模块" class="headerlink" title="4、数据库模块"></a>4、数据库模块</h2><p><font color="green">spring-jdbc</font>：提供jdbc访问数据库的支持，包含Spring对数据库访问操作进行封装的所有类，它提供了一个JDBC抽象层，从而实现对其他厂商的支持。</p>
+<p><code>spring-tx</code>：提供对事物的支持。</p>
+<p><code>spring-orm</code>：提供对对象关系映射的支持，使用Spring可轻松地整合其他第三方ORM库，如Hibernate、Mybatis、JAP等。</p>
+<p><code>spring-oxm</code>：提供对xml映射支持。</p>
+<p><code>spring-jms</code>：提供对java消息服务的支持。</p>
+<p>#四、Spring的核心容器<br>Spring框架的主要功能是通过Spring的核心容器来实现的。Spring容器会控制程序之间的关系，而不是由程序代码直接控制，Spring为我们提供了两种核心容器，BeanFactory和ApplicationContext。</p>
+<p>##1、BeanFactory<br>BeanFactory是一个基础类型的控制反转容器，是一个管理Bean的工厂，主要负责初始化各种Bean并调用他们的生命周期方法。<br>创建BeanFactory实例时，需要提供Spring所管理容器的详细配置信息，这些信息通常采用XML文件形式来管理。<br>加载配置信息的语法：</p>
+<pre><code>BeanFactory beanFactory =
+new XmlBeanFactory(new FileSystemResource(“F:/application.xml”));
+</code></pre><p>(这种加载方式开发中基本不用)。<br>BeanFactory是一个接口，我们使用其实现类（ XmlBeanFactory）来创建对象</p>
+<p>##2、ApplicationContext<br>ApplicationContext是BeanFactory的子接口，是另一种常用的Spring核心容器。其由org.springframework.context.ApplicationContext接口定义，不仅包含BeanFactory的所有功能，还添加了对国际化、资源访问、事务传播等哪方面的支持。</p>
+<p>###1、创建ApplicationContext接口实例<br>通常采用两种防范：</p>
+<p>####（1）通过ClassPathXmlApplicationContext创建<br>    ApplicationContext applicationoContext =<br>    new ClassPathXmlApplicationContext(String configLocation);</p>
+<p>ClassPathXmlApplicationContext会从类路径classPath中寻找指定的XML配置文件，找到并装在完成ApplicationContext的实例化。<br>此方法常用。</p>
+<p>####（2）通过FileSystemXmlApplicationContext创建<br>    ApplicationContext applicationoContext =<br>    new FileSystemXmlApplicationContext(String cofigLocation);<br>FileSystemXmlApplicationContext会从指定的文件系统路径（绝对路径）中寻找指定的XML文件，找到并装在完成ApplicationContext的实例化。</p>
+<p>###2、Web项目中ApplicationContext的实例化<br>在java项目中，需要通过ClassPathXmlApplicationContext类来实例化ApplicationContext容器。</p>
+<p>####（1）实例化<br>在Web项目中，ApplicationContext容器的实例化工作会交给Web服务器来完成。<br>Web服务器在实例化ApplicationContext容器时，通常会使用ClassLoaderListener来实现，这种方式只需要在web.xml中添加如下代码：</p>
+<pre><code>&lt;context-param&gt;
+    &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+    &lt;param-value&gt;
+        classpath:spring/applicationContext.xml
+    &lt;/param-value&gt;
+&lt;/context-param&gt;
+
+&lt;listener&gt;
+    &lt;listener-class&gt;
+            org.springframework.web.context.ContextLoaderListener
+    &lt;/listener-class&gt;
+&lt;/listener&gt;
+</code></pre><p>####（2）Spring获取Bean实例<br>在Spring容器床创建之后，就可以获取Spring容器中的bean。Spring获取Bean的实例的两种方法：</p>
+<pre><code>Object getBean(String name);
+</code></pre><p>根据容器中bean的id或name来获取bean，获取之后需要进行强制类型转换。</p>
+<pre><code>&lt;T&gt;T getBean(Class&lt;T&gt; requiredType);
+</code></pre><p>根据类的类型来获取bean的实例，泛型方法，获取bean之后不需要强制类型转换。</p>
+<p>###3、BeanFactory与ApplicationContext区别与选用<br>两种容器都是通过XML文件配置和加载bean，两者主要区别在于，如果bean的一个属性没有注入，使用BeanFactory加载后，第一次调用getBean()方法时会抛出异常，而ApplicationContext则在初始化的时候自检，这样有利于检查所依赖的属性是否注入。因此，在开发中，通常优先使用ApplicationContext，而只有在系统资源较少时，才考虑使用BeanFactory。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-04-21T09:10:02.108Z" itemprop="dateUpdated">2019-04-21 17:10:02</time>
+</span><br>
+
+
+        
+        自律与自由    Sunday, April 21st 2019, 5:10:50 pm
+        
+    </div>
+    
+    <footer>
+        <a href="https://kouwentao.github.io">
+            <img src="/img/kou.jpg" alt="Nano_kou">
+            Nano_kou
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Spring/">Spring</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kouwentao.github.io/2019/04/21/Spring/&title=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&pic=https://kouwentao.github.io/img/kou.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kouwentao.github.io/2019/04/21/Spring/&title=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&source=个人网站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kouwentao.github.io/2019/04/21/Spring/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&url=https://kouwentao.github.io/2019/04/21/Spring/&via=https://kouwentao.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kouwentao.github.io/2019/04/21/Spring/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/04/19/Hexo添加网易云音乐/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hexo添加网易云音乐</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>记录学习 记录生活</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Nano_kou &copy; 2019</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://kouwentao.github.io/2019/04/21/Spring/&title=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&pic=https://kouwentao.github.io/img/kou.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://kouwentao.github.io/2019/04/21/Spring/&title=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&source=个人网站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://kouwentao.github.io/2019/04/21/Spring/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Spring学习整理（一）：Spring基础》 — Nano_kou Home&url=https://kouwentao.github.io/2019/04/21/Spring/&via=https://kouwentao.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://kouwentao.github.io/2019/04/21/Spring/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://kouwentao.github.io/2019/04/21/Spring/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又回好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>

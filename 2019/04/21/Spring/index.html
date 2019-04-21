@@ -21,18 +21,18 @@
     
     
     <meta name="keywords" content="Spring">
-    <meta name="description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+    <meta name="description" content="SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并提供">
 <meta name="keywords" content="Spring">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习整理（一）：Spring基础">
 <meta property="og:url" content="https://kouwentao.github.io/2019/04/21/Spring/index.html">
 <meta property="og:site_name" content="Nano_kou Home">
-<meta property="og:description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+<meta property="og:description" content="SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并提供">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-21T09:16:04.107Z">
+<meta property="og:updated_time" content="2019-04-21T09:24:34.555Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习整理（一）：Spring基础">
-<meta name="twitter:description" content="一、SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并">
+<meta name="twitter:description" content="SpringSpring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。 Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。 目的：解决企业应用开发的复杂性。 功能：使用基本的JavaBean代替EJB，并提供">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -176,7 +176,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、Spring"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、Spring</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、Spring框架的优点"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、Spring框架的优点</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三、Spring的体系结构"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、Spring的体系结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、核心模块"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">1、核心模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、AOP模块"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">2、AOP模块.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Web模块"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">3、Web模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4、数据库模块"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">4、数据库模块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四、Spring的核心容器"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、Spring的核心容器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、BeanFactory"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">1、BeanFactory</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、ApplicationContext"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2、ApplicationContext</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、创建ApplicationContext接口实例"><span class="post-toc-number">4.2.1.</span> <span class="post-toc-text">1、创建ApplicationContext接口实例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（1）通过ClassPathXmlApplicationContext创建"><span class="post-toc-number">4.2.1.1.</span> <span class="post-toc-text">（1）通过ClassPathXmlApplicationContext创建</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（2）通过FileSystemXmlApplicationContext创建"><span class="post-toc-number">4.2.1.2.</span> <span class="post-toc-text">（2）通过FileSystemXmlApplicationContext创建</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、Web项目中ApplicationContext的实例化"><span class="post-toc-number">4.2.2.</span> <span class="post-toc-text">2、Web项目中ApplicationContext的实例化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（1）实例化"><span class="post-toc-number">4.2.2.1.</span> <span class="post-toc-text">（1）实例化</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（2）Spring获取Bean实例"><span class="post-toc-number">4.2.2.2.</span> <span class="post-toc-text">（2）Spring获取Bean实例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、BeanFactory与ApplicationContext区别与选用"><span class="post-toc-number">4.2.3.</span> <span class="post-toc-text">3、BeanFactory与ApplicationContext区别与选用</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Spring"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Spring框架的优点"><span class="post-toc-number">2.</span> <span class="post-toc-text">Spring框架的优点</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Spring的体系结构"><span class="post-toc-number">3.</span> <span class="post-toc-text">Spring的体系结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#核心模块"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">核心模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#AOP模块"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">AOP模块.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Web模块"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">Web模块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据库模块"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">数据库模块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Spring的核心容器"><span class="post-toc-number">4.</span> <span class="post-toc-text">Spring的核心容器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#BeanFactory"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">BeanFactory</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ApplicationContext"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">ApplicationContext</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建ApplicationContext接口实例"><span class="post-toc-number">4.2.1.</span> <span class="post-toc-text">创建ApplicationContext接口实例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#通过ClassPathXmlApplicationContext创建"><span class="post-toc-number">4.2.1.1.</span> <span class="post-toc-text">通过ClassPathXmlApplicationContext创建</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#通过FileSystemXmlApplicationContext创建"><span class="post-toc-number">4.2.1.2.</span> <span class="post-toc-text">通过FileSystemXmlApplicationContext创建</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Web项目中ApplicationContext的实例化"><span class="post-toc-number">4.2.2.</span> <span class="post-toc-text">Web项目中ApplicationContext的实例化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#实例化"><span class="post-toc-number">4.2.2.1.</span> <span class="post-toc-text">实例化</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Spring获取Bean实例"><span class="post-toc-number">4.2.2.2.</span> <span class="post-toc-text">Spring获取Bean实例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#BeanFactory与ApplicationContext区别与选用"><span class="post-toc-number">4.2.3.</span> <span class="post-toc-text">BeanFactory与ApplicationContext区别与选用</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -201,7 +201,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="一、Spring"><a href="#一、Spring" class="headerlink" title="一、Spring"></a>一、Spring</h1><p>Spring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。</p>
+            <h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><p>Spring是一个开源框架，由Jack Johnson创建，是为了解决企业应用开发的复杂性而创建的。</p>
 <p>Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。</p>
 <p>Spring的应用不仅限于服务器端开发、从简单性、可测试性和松耦合性的角度而言，任何Java应用都可以从Spring中获益。</p>
 <p>目的：解决企业应用开发的复杂性。</p>
@@ -211,44 +211,44 @@
 <p>表示层（Web）：在表示层提供了对Struts2等框架的整合。</p>
 <p>业务逻辑层（Service）：在业务逻辑层可以管理事务，记录日志等。</p>
 <p>持久层（Dao）：在持久层可以整合Hibernate和JdbcTemplate等技术。</p>
-<h1 id="二、Spring框架的优点"><a href="#二、Spring框架的优点" class="headerlink" title="二、Spring框架的优点"></a>二、Spring框架的优点</h1><p>1.使用Spring的IoC容器，将对象之间的依赖关系交个Spring，降低组件之间的耦合性</p>
+<h1 id="Spring框架的优点"><a href="#Spring框架的优点" class="headerlink" title="Spring框架的优点"></a>Spring框架的优点</h1><p>1.使用Spring的IoC容器，将对象之间的依赖关系交个Spring，降低组件之间的耦合性</p>
 <p>2.可以提供众多服务，事务管理，WS等</p>
 <p>3.AOP的很好支持，方便面向切面编程</p>
 <p>4.对主流框架提供很好的集成支持，如Hibernate、Struts2、JPA等</p>
 <p>5.Spring DI机制降低了业务对象替换的复杂性</p>
 <p>6.低侵入，代码污染低</p>
 <p>7.Spring的高度可开放性，并不强制依赖于Spring，开发之可以自由选择Spring的部分或全部</p>
-<h1 id="三、Spring的体系结构"><a href="#三、Spring的体系结构" class="headerlink" title="三、Spring的体系结构"></a>三、Spring的体系结构</h1><p>Spring框架采用分层架构，其一系列功能要素被分为20个模块。<br>Spring的核心模块包含Core、Beans、Context和Expression Language四个小模块。其中，Core和Beans是整个Spring框架基础部分，也是Spring 的核心依赖注入IoC和DI的最基本实现，Spring的其他模块大多依赖这两个功能。</p>
-<h2 id="1、核心模块"><a href="#1、核心模块" class="headerlink" title="1、核心模块"></a>1、核心模块</h2><p><code>spring-core</code>：其他模块的基础核心，包含Spring框架的核心工具类，Spring其他模块都要使用该包里面的类。</p>
+<h1 id="Spring的体系结构"><a href="#Spring的体系结构" class="headerlink" title="Spring的体系结构"></a>Spring的体系结构</h1><p>Spring框架采用分层架构，其一系列功能要素被分为20个模块。<br>Spring的核心模块包含Core、Beans、Context和Expression Language四个小模块。其中，Core和Beans是整个Spring框架基础部分，也是Spring 的核心依赖注入IoC和DI的最基本实现，Spring的其他模块大多依赖这两个功能。</p>
+<h2 id="核心模块"><a href="#核心模块" class="headerlink" title="核心模块"></a>核心模块</h2><p><code>spring-core</code>：其他模块的基础核心，包含Spring框架的核心工具类，Spring其他模块都要使用该包里面的类。</p>
 <p><code>spring-beans</code>：Spring定义bean的支持，负责访问配置文件、创建和管理bean，支持依赖注入和控制反转的相关操作。Bean工厂类就在这个jar包中。</p>
 <p><code>spring-context</code>：Spring运行时容器，在Core和Beans的基础上，提供对Spring的上下文支持，ApplicationContext是该包的关键，通过它可以快速的取出依赖注入的bean。</p>
 <p><code>spring-expression</code>：Spring表达式语言，帮助Spring在运行时查询和操作对象。支持设置/获取对象的属性值，方法的调用。</p>
-<h2 id="2、AOP模块"><a href="#2、AOP模块" class="headerlink" title="2、AOP模块."></a>2、AOP模块.</h2><p><code>spring-aop</code>：对于代理AOP的支持。</p>
+<h2 id="AOP模块"><a href="#AOP模块" class="headerlink" title="AOP模块."></a>AOP模块.</h2><p><code>spring-aop</code>：对于代理AOP的支持。</p>
 <p><code>spring-Aspects</code>：对于AspectJ的AOP支持。</p>
-<h2 id="3、Web模块"><a href="#3、Web模块" class="headerlink" title="3、Web模块"></a>3、Web模块</h2><p><code>spring-web</code>：提供基础的web功能，在web项目中提供Spring容器。</p>
+<h2 id="Web模块"><a href="#Web模块" class="headerlink" title="Web模块"></a>Web模块</h2><p><code>spring-web</code>：提供基础的web功能，在web项目中提供Spring容器。</p>
 <p><code>spring-webmvc</code>：提供基于Servlet的SpringMVC。</p>
 <p><code>spring-WebSocket</code>：提供WebSocket功能。</p>
 <p><code>spring-webmvc-portlet</code>：提供portlet的支持。</p>
-<h2 id="4、数据库模块"><a href="#4、数据库模块" class="headerlink" title="4、数据库模块"></a>4、数据库模块</h2><p><code>spring-jdbc</code>：提供jdbc访问数据库的支持，包含Spring对数据库访问操作进行封装的所有类，它提供了一个JDBC抽象层，从而实现对其他厂商的支持。</p>
+<h2 id="数据库模块"><a href="#数据库模块" class="headerlink" title="数据库模块"></a>数据库模块</h2><p><code>spring-jdbc</code>：提供jdbc访问数据库的支持，包含Spring对数据库访问操作进行封装的所有类，它提供了一个JDBC抽象层，从而实现对其他厂商的支持。</p>
 <p><code>spring-tx</code>：提供对事物的支持。</p>
 <p><code>spring-orm</code>：提供对对象关系映射的支持，使用Spring可轻松地整合其他第三方ORM库，如Hibernate、Mybatis、JAP等。</p>
 <p><code>spring-oxm</code>：提供对xml映射支持。</p>
 <p><code>spring-jms</code>：提供对java消息服务的支持。</p>
-<h1 id="四、Spring的核心容器"><a href="#四、Spring的核心容器" class="headerlink" title="四、Spring的核心容器"></a>四、Spring的核心容器</h1><p>Spring框架的主要功能是通过Spring的核心容器来实现的。Spring容器会控制程序之间的关系，而不是由程序代码直接控制，Spring为我们提供了两种核心容器，BeanFactory和ApplicationContext。</p>
-<h2 id="1、BeanFactory"><a href="#1、BeanFactory" class="headerlink" title="1、BeanFactory"></a>1、BeanFactory</h2><p>BeanFactory是一个基础类型的控制反转容器，是一个管理Bean的工厂，主要负责初始化各种Bean并调用他们的生命周期方法。<br>创建BeanFactory实例时，需要提供Spring所管理容器的详细配置信息，这些信息通常采用XML文件形式来管理。<br>加载配置信息的语法：</p>
+<h1 id="Spring的核心容器"><a href="#Spring的核心容器" class="headerlink" title="Spring的核心容器"></a>Spring的核心容器</h1><p>Spring框架的主要功能是通过Spring的核心容器来实现的。Spring容器会控制程序之间的关系，而不是由程序代码直接控制，Spring为我们提供了两种核心容器，BeanFactory和ApplicationContext。</p>
+<h2 id="BeanFactory"><a href="#BeanFactory" class="headerlink" title="BeanFactory"></a>BeanFactory</h2><p>BeanFactory是一个基础类型的控制反转容器，是一个管理Bean的工厂，主要负责初始化各种Bean并调用他们的生命周期方法。<br>创建BeanFactory实例时，需要提供Spring所管理容器的详细配置信息，这些信息通常采用XML文件形式来管理。<br>加载配置信息的语法：</p>
 <pre><code>BeanFactory beanFactory =
 new XmlBeanFactory(new FileSystemResource(“F:/application.xml”));
 </code></pre><p>(这种加载方式开发中基本不用)。<br>BeanFactory是一个接口，我们使用其实现类（ XmlBeanFactory）来创建对象</p>
-<h2 id="2、ApplicationContext"><a href="#2、ApplicationContext" class="headerlink" title="2、ApplicationContext"></a>2、ApplicationContext</h2><p>ApplicationContext是BeanFactory的子接口，是另一种常用的Spring核心容器。其由org.springframework.context.ApplicationContext接口定义，不仅包含BeanFactory的所有功能，还添加了对国际化、资源访问、事务传播等哪方面的支持。</p>
-<h3 id="1、创建ApplicationContext接口实例"><a href="#1、创建ApplicationContext接口实例" class="headerlink" title="1、创建ApplicationContext接口实例"></a>1、创建ApplicationContext接口实例</h3><p>通常采用两种防范：</p>
-<h4 id="（1）通过ClassPathXmlApplicationContext创建"><a href="#（1）通过ClassPathXmlApplicationContext创建" class="headerlink" title="（1）通过ClassPathXmlApplicationContext创建"></a>（1）通过ClassPathXmlApplicationContext创建</h4><pre><code>ApplicationContext applicationoContext = 
+<h2 id="ApplicationContext"><a href="#ApplicationContext" class="headerlink" title="ApplicationContext"></a>ApplicationContext</h2><p>ApplicationContext是BeanFactory的子接口，是另一种常用的Spring核心容器。其由org.springframework.context.ApplicationContext接口定义，不仅包含BeanFactory的所有功能，还添加了对国际化、资源访问、事务传播等哪方面的支持。</p>
+<h3 id="创建ApplicationContext接口实例"><a href="#创建ApplicationContext接口实例" class="headerlink" title="创建ApplicationContext接口实例"></a>创建ApplicationContext接口实例</h3><p>通常采用两种防范：</p>
+<h4 id="通过ClassPathXmlApplicationContext创建"><a href="#通过ClassPathXmlApplicationContext创建" class="headerlink" title="通过ClassPathXmlApplicationContext创建"></a>通过ClassPathXmlApplicationContext创建</h4><pre><code>ApplicationContext applicationoContext = 
 new ClassPathXmlApplicationContext(String configLocation);
 </code></pre><p>ClassPathXmlApplicationContext会从类路径classPath中寻找指定的XML配置文件，找到并装在完成ApplicationContext的实例化。<br>此方法常用。</p>
-<h4 id="（2）通过FileSystemXmlApplicationContext创建"><a href="#（2）通过FileSystemXmlApplicationContext创建" class="headerlink" title="（2）通过FileSystemXmlApplicationContext创建"></a>（2）通过FileSystemXmlApplicationContext创建</h4><pre><code>ApplicationContext applicationoContext = 
+<h4 id="通过FileSystemXmlApplicationContext创建"><a href="#通过FileSystemXmlApplicationContext创建" class="headerlink" title="通过FileSystemXmlApplicationContext创建"></a>通过FileSystemXmlApplicationContext创建</h4><pre><code>ApplicationContext applicationoContext = 
 new FileSystemXmlApplicationContext(String cofigLocation);
 </code></pre><p>FileSystemXmlApplicationContext会从指定的文件系统路径（绝对路径）中寻找指定的XML文件，找到并装在完成ApplicationContext的实例化。</p>
-<h3 id="2、Web项目中ApplicationContext的实例化"><a href="#2、Web项目中ApplicationContext的实例化" class="headerlink" title="2、Web项目中ApplicationContext的实例化"></a>2、Web项目中ApplicationContext的实例化</h3><p>在java项目中，需要通过ClassPathXmlApplicationContext类来实例化ApplicationContext容器。</p>
-<h4 id="（1）实例化"><a href="#（1）实例化" class="headerlink" title="（1）实例化"></a>（1）实例化</h4><p>在Web项目中，ApplicationContext容器的实例化工作会交给Web服务器来完成。<br>Web服务器在实例化ApplicationContext容器时，通常会使用ClassLoaderListener来实现，这种方式只需要在web.xml中添加如下代码：</p>
+<h3 id="Web项目中ApplicationContext的实例化"><a href="#Web项目中ApplicationContext的实例化" class="headerlink" title="Web项目中ApplicationContext的实例化"></a>Web项目中ApplicationContext的实例化</h3><p>在java项目中，需要通过ClassPathXmlApplicationContext类来实例化ApplicationContext容器。</p>
+<h4 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h4><p>在Web项目中，ApplicationContext容器的实例化工作会交给Web服务器来完成。<br>Web服务器在实例化ApplicationContext容器时，通常会使用ClassLoaderListener来实现，这种方式只需要在web.xml中添加如下代码：</p>
 <pre><code>&lt;context-param&gt;
     &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
     &lt;param-value&gt;
@@ -261,12 +261,12 @@ new FileSystemXmlApplicationContext(String cofigLocation);
             org.springframework.web.context.ContextLoaderListener
     &lt;/listener-class&gt;
 &lt;/listener&gt;
-</code></pre><h4 id="（2）Spring获取Bean实例"><a href="#（2）Spring获取Bean实例" class="headerlink" title="（2）Spring获取Bean实例"></a>（2）Spring获取Bean实例</h4><p>在Spring容器床创建之后，就可以获取Spring容器中的bean。Spring获取Bean的实例的两种方法：</p>
+</code></pre><h4 id="Spring获取Bean实例"><a href="#Spring获取Bean实例" class="headerlink" title="Spring获取Bean实例"></a>Spring获取Bean实例</h4><p>在Spring容器床创建之后，就可以获取Spring容器中的bean。Spring获取Bean的实例的两种方法：</p>
 <pre><code>Object getBean(String name);
 </code></pre><p>根据容器中bean的id或name来获取bean，获取之后需要进行强制类型转换。</p>
 <pre><code>&lt;T&gt;T getBean(Class&lt;T&gt; requiredType);
 </code></pre><p>根据类的类型来获取bean的实例，泛型方法，获取bean之后不需要强制类型转换。</p>
-<h3 id="3、BeanFactory与ApplicationContext区别与选用"><a href="#3、BeanFactory与ApplicationContext区别与选用" class="headerlink" title="3、BeanFactory与ApplicationContext区别与选用"></a>3、BeanFactory与ApplicationContext区别与选用</h3><p>两种容器都是通过XML文件配置和加载bean，两者主要区别在于，如果bean的一个属性没有注入，使用BeanFactory加载后，第一次调用getBean()方法时会抛出异常，而ApplicationContext则在初始化的时候自检，这样有利于检查所依赖的属性是否注入。因此，在开发中，通常优先使用ApplicationContext，而只有在系统资源较少时，才考虑使用BeanFactory。</p>
+<h3 id="BeanFactory与ApplicationContext区别与选用"><a href="#BeanFactory与ApplicationContext区别与选用" class="headerlink" title="BeanFactory与ApplicationContext区别与选用"></a>BeanFactory与ApplicationContext区别与选用</h3><p>两种容器都是通过XML文件配置和加载bean，两者主要区别在于，如果bean的一个属性没有注入，使用BeanFactory加载后，第一次调用getBean()方法时会抛出异常，而ApplicationContext则在初始化的时候自检，这样有利于检查所依赖的属性是否注入。因此，在开发中，通常优先使用ApplicationContext，而只有在系统资源较少时，才考虑使用BeanFactory。</p>
 
         </div>
 
@@ -275,12 +275,12 @@ new FileSystemXmlApplicationContext(String cofigLocation);
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-04-21T09:16:04.107Z" itemprop="dateUpdated">2019-04-21 17:16:04</time>
+    最后更新时间：<time datetime="2019-04-21T09:24:34.555Z" itemprop="dateUpdated">2019-04-21 17:24:34</time>
 </span><br>
 
 
         
-        自律与自由    Sunday, April 21st 2019, 5:17:29 pm
+        自律与自由    Sunday, April 21st 2019, 5:25:23 pm
         
     </div>
     
